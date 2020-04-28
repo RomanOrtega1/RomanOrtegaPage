@@ -1,0 +1,42 @@
+@font-face {
+  src: url(fonts\XanderBruceDemoRegular.ttf); 
+  font-family: inkfont;
+  }
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: inkfont;
+    background-color: black;
+    color: aliceblue;
+}
+body {
+    background: rgba(217, 231, 188, 0.377);
+  }
+img{width: 180px;margin-left: 40px;
+    border-radius: 16px;
+    border: 5px solid;
+    border-color: black;
+    float: left;
+}
+.container {
+  position: relative;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 198px;
+  left: 60px}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th{
+  background-color: black;
+  color: aliceblue;
+}
+td{
+  background-color: rgb(129, 129, 129);
+  color: aliceblue;
+  padding: 10px;
+}
