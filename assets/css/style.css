@@ -16,11 +16,15 @@ p{
   margin-left: 270px;}
 body {
     background: rgba(217, 231, 188, 0.377);}
-img{width: 180px;margin-left: 40px;
+.img{
+  width: 180px;margin-left: 40px;
     border-radius: 16px;
     border: 5px solid;
     border-color: black;
     float: left;}
+.img1{
+  width: 250px;
+}
 .container {
   position: relative;
   color: black;}
@@ -44,7 +48,6 @@ ul{
   display: flex;
   background-color: black;}
 .flex-container > div {
-  background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 30px;}
