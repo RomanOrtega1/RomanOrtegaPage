@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página5</title> 
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+<body>
+    <svg width="400" height="200">
+        <circle cx="100" cy="100" r="30" style="fill:orange;"></circle>
+        <circle cx="200" cy="100" r="30" style="fill:orange;"></circle>
+        <circle cx="300" cy="100" r="30" style="fill:orange;"></circle>    
+    </svg>
+    <script>
+    function update(data){
+        circle = d3.selectAll('circle')
+            .data(data);
+        
+        circle.transition().duration(500)
+        .style('fill',function(d){return d;})
+    }
+    
+    function newColors(){
+        colorrgb = []
+        for (var i=0; i<3; i++){
+            colorrgb.push(Math.floor(Math.random()*256))
+        }
+        color = 'rgb('+colorrgb.toString()+')'
+        return [color,color,color]
+    };
+        
+    setInterval(function(){
+        update(newColors())},
+        1500);
+    </script>
+</body>
+</html>

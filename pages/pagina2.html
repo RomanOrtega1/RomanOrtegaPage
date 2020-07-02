@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página2</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+<body style="background-color: darkgrey;">
+    <p id="lenteja" style="position: fixed;">Levantaté, <br>
+        Anda y abre la nevera,<br>
+        Y mira a ver <br>
+        Si te queda mortadela <br>
+        <br>
+        Levantaté... <br>
+        Anda y abre la nevera si te queda mortadela <br>
+        <br>
+        Aaah, <br>
+        La vida es una lenteja, <br>
+        O la tomas o la dejas, <br>
+        La vida es una lenteja, <br>
+        O la tomas o la dejas, <br>
+        La vida es una lenteja <br>
+        O la tomas o la dejas...</p>
+
+        <script>      
+    setInterval(
+        function () {
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.getElementById ("lenteja").style.color = "#"+randomColor;
+            },1000);
+        </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página3</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styleclicker.css">
+</head>
+<body>
+    <div class="main">
+
+        <h3>Contador: Se me derrite el lobulo frontal</h3>
+        <button id="clickme">Hace click desgraciado: 0</button>
+    
+        <h5>Aquel que tiene de más es porque quiere de menos</h5>
+    
+      </div>
+      <script>
+      var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "MÁS: " + count;
+};
+</script>
+</body>
+</html>
